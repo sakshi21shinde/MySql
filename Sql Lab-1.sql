@@ -43,6 +43,9 @@ select * from customer;
 
 alter table customer add DateofBirth date;
 alter table customer modify column phone varchar(20);
+SELECT * FROM bank.accounts;
+alter table accounts add column c_id int;
+alter table accounts add constraint fk foreign key(c_id) references customer(customer_id);
 
 
 
